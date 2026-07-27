@@ -1,3 +1,4 @@
+import { GestorContactos } from "./formulario.js";
 // Afirmamos los tipos exactos de los elementos del DOM
 const boton = document.getElementById('menuBtn') as HTMLButtonElement;
 const links = document.querySelector('.nav__links') as HTMLUListElement;
@@ -24,3 +25,11 @@ document.querySelectorAll(".oculto").forEach((el: Element) => {
 });
 
 console.log('¡TypeScript, Animaciones y Scroll Reveal operativos!');
+
+// ==========================================
+// Formulario POO y JSON
+// ==========================================
+const gestor = new GestorContactos("#formulario", "#error", "#lista-contactos");
+
+const btnGuardar = document.querySelector("#guardar") as HTMLButtonElement;
+btnGuardar?.addEventListener("click", () => gestor.guardarJSON());
