@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emprende - Recursos para emprendedores</title>
+    <!-- CSS generado por SASS -->
+  <script type="module" crossorigin src="/landing-emprendedores/assets/index-D62nQei_.js"></script>
+  <link rel="stylesheet" crossorigin href="/landing-emprendedores/assets/index-DDYDmyZC.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="nav">
+            <a href="#" class="logo">Emprende</a>
+            <ul class="nav__links">
+                <li><a href="#recursos" class="nav-link">Recursos</a></li>
+                <li><a href="#comunidad" class="nav-link">Comunidad</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <button class="nav__toggle" id="menuBtn">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Impulsa y haz crecer tu emprendimiento</h1>
+            <p>Guías, plantillas y recursos prácticos para emprendedores.</p>
+            <a href="#recursos" class="btn">Explorar recursos</a>
+            <div class="scroll-indicador">↓</div>
+        </section>
+
+        <section class="recursos oculto" id="recursos">
+            <h2>Recursos</h2>
+            <div class="cards">
+                <article class="card"><h3>Plan de negocio</h3><p>Estructura tu idea.</p></article>
+                <article class="card"><h3>Finanzas</h3><p>Controla tu dinero.</p></article>
+                <article class="card"><h3>Marketing</h3><p>Consigue clientes.</p></article>
+            </div>
+        </section>
+    </main>
+
+    <section class="contacto seccion">
+        <div class="contacto__contenedor">
+            <h2>Regístrate</h2>
+            <p class="contacto__descripcion">Únete a nuestra plataforma y lleva tu proyecto al siguiente nivel.</p>
+            
+            <form id="formulario" class="contacto__formulario">
+                <input class="contacto__input" name="nombre" placeholder="Nombre completo" required>
+                <input class="contacto__input" name="correo" type="email" placeholder="Correo electrónico" required>
+                <select class="contacto__select" name="plan">
+                    <option value="" disabled selected>Selecciona un plan...</option>
+                    <option value="gratis">Plan Gratis</option>
+                    <option value="emprendedor">Plan Emprendedor</option>
+                    <option value="empresa">Plan Empresa</option>
+                </select>
+                <button type="submit" class="btn btn--ancho">Registrarme</button>
+            </form>
+            
+            <p id="error" class="contacto__error"></p>
+            
+            <div class="contacto__resultados">
+                <ul id="lista-contactos" class="contacto__lista"></ul>
+                <button id="guardar" class="btn btn--secundario">Descargar contactos (JSON)</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer" id="contacto">
+        <p>¿Tienes dudas? Escríbenos a hola@emprende.com</p>
+        <p>© 2026 Emprende. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
